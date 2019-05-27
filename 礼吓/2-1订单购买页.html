@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="reset.css" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			html {
+				/* font-size: 100px; */
+				/* 设计图:750px ---- 设备375px
+				 测量大小减半
+				 */
+				font-size: 50px;
+			}
+
+			/* 单位:不要出现px单位
+			1. 百分比单位
+			2. rem单位
+			3.铺满屏宽度:不要给,自适应
+			4.文字大小用rem单位
+			
+			多用弹性盒子!!!!
+			 */
+
+			@media screen and (max-width: 374px) {
+				html {
+					font-size: 40px;
+				}
+
+			}
+
+			@media screen and (min-width: 376px) and (max-width: 414px) {
+				html {
+					font-size: 60px;
+				}
+
+			}
+
+			.container {
+				/* border: 1px solid red; */
+				font-size: .28rem;
+				display: flex;
+				/* 侧轴默认stretch(默认值)  */
+
+				/* 主轴 */
+				/* justify-content: center; */
+				/*  侧轴  */
+				align-items: center;
+				justify-content: space-between;
+				/* margin-top: .35rem; */
+				margin-bottom: .35rem;
+			}
+
+			.item11 {
+				width: .34rem;
+				height: .34rem;
+				margin-left: .5rem;
+				flex: 1;
+			}
+
+			.item11 img {
+				width: 100%;
+			}
+
+			.item2 {
+				margin-left: .2rem;
+				flex: 1;
+
+			}
+
+			.item2 a {
+				color: #656565;
+				font-size: .28rem;
+				font-weight: 600;
+			}
+
+			.item3 {
+				margin-right: .3rem;
+				flex: 4;
+				text-align: right;
+			}
+
+			.item3 a {
+				font-size: .24rem;
+				color: #656565;
+			}
+
+			.biglogo {
+				width: 2.26rem;
+				height: 2.55rem;
+				margin: 0 auto;
+			}
+
+			.biglogo img {
+				width: 100%;
+			}
+
+			.shuaxin {
+				width: .66rem;
+				height: .66rem;
+				margin: 0 auto;
+				margin-top: .47rem;
+				margin-bottom: .51rem;
+			}
+
+			.shuaxin img {
+				width: 100%;
+			}
+
+			.container2 {
+				/* border: 1px solid red; */
+				font-size: .28rem;
+				display: flex;
+				/* 侧轴默认stretch(默认值)  */
+
+				/* 主轴 */
+				/* justify-content: center; */
+				/*  侧轴  */
+				align-items: center;
+				justify-content: space-between;
+				/* margin-top: .35rem; */
+				margin-bottom: .32rem;
+			}
+
+			.2item1 {
+				flex: 1;
+			}
+
+			.2item2 {
+				flex: 1;
+			}
+
+			.container3 {
+				/* border: 1px solid red; */
+				font-size: .24rem;
+				display: flex;
+				/* 侧轴默认stretch(默认值)  */
+
+				/* 主轴 */
+				/* justify-content: center; */
+				/*  侧轴  */
+				align-items: center;
+				justify-content: space-between;
+				/* margin-top: .35rem; */
+				/* margin-bottom: .32rem; */
+			}
+
+			.left {
+				flex: 4;
+				margin-left: .5rem;
+			}
+
+			.right {
+				flex: 2;
+
+			}
+
+			.btn {
+				flex: 1;
+
+			}
+
+			.warning {
+				width: .24rem;
+				height: .24rem;
+			}
+
+			.warning img {
+				width: 100%;
+			}
+
+			.flex-container {
+				/* border: 1px solid red; */
+				display: flex;
+				flex-wrap: wrap;
+				margin-top: .42rem;
+				margin-left: .5rem;
+			}
+			.flex-item{
+				/* background: #006600; */
+				width: 2.8rem;
+				height: 2.64rem;
+				/* margin-left: 10px; */
+				margin-right: .35rem;
+				margin-bottom: .2rem;
+				/* padding: .3rem; */
+			}
+			.flex-item img{
+				width: 100%;
+			}
+			.ex{
+				text-align: center;
+				margin-top: .3rem;
+				margin-bottom: .3rem;
+			}
+			.ex p{
+				color:  #656565;
+				font-weight: 600;
+			}
+			.container4 {
+				/* border: 1px solid red; */
+				/* font-size: .24rem; */
+				display: flex;
+				/* 侧轴默认stretch(默认值)  */
+			
+				/* 主轴 */
+				/* justify-content: center; */
+				/*  侧轴  */
+				align-items: center;
+				justify-content: space-between;
+				margin-top: .35rem;
+				margin-bottom: .32rem;
+			}
+			.buy{
+				width: 1.5rem;
+				height: .66rem;
+				margin-right: 1rem;
+				
+			}
+			.buy img{
+				width: 100%;
+			}
+			.price{
+				margin-left: 1rem;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 style="font-size: 0.36rem; text-align: center; font-weight: 600; line-height: 0.96rem;">购买礼盒</h1>
+		<div class="wrapper">
+			<div class="container">
+				<div class="item1">
+					<div class="item11">
+						<img src="img/giftlogo.png">
+					</div>
+				</div>
+				<div class="item2">
+					<a href="#">礼盒包装</a>
+				</div>
+				<div class="item3">
+					<a href="#">赠礼须知</a>
+				</div>
+			</div>
+			<div class="biglogo">
+				<img src="img/biggiftlogo.png">
+			</div>
+			<div class="shuaxin">
+				<a href="#">
+					<img src="img/shuaxin-btn.png">
+				</a>
+			</div>
+			<div class="container2">
+				<div class="item1">
+					<div class="item11">
+						<img src="img/giftlogo.png">
+					</div>
+				</div>
+				<div class="item2">
+					<a href="#">盒内礼品</a>
+				</div>
+			</div>
+			<div class="container3">
+				<div class="left">
+					<p>已选数量:9</p>
+				</div>
+				<div class="right">
+					<p>幸运礼品:iphoneX</p>
+				</div>
+				<div class="btn">
+					<div class="warning">
+						<img src="img/warning-btn.png">
+					</div>
+				</div>
+			</div>
+			<div class="flex-container">
+				<div class="flex-item">
+					<img src="img/vip1.png">
+				</div>
+				<div class="flex-item">
+					<img src="img/vip2.png">
+
+				</div>
+				<div class="flex-item">
+					<img src="img/vip3.png">
+
+				</div>
+				<div class="flex-item">
+					<img src="img/vip4.png">
+
+				</div>
+				<div class="flex-item">
+					<img src="img/vip5.png">
+
+				</div>
+				<div class="flex-item">
+					<img src="img/vip6.png">
+
+				</div>
+				<div class="flex-item">
+					<img src="img/vip7.png">
+
+				</div>
+				<div class="flex-item">
+					<img src="img/vip8.png">
+
+				</div>
+			</div>
+			<div class="ex">
+				<p>*暂不支持的收货地区:新疆、西藏、青海、港澳台</p>
+			</div>
+			<hr style="color: #656565;">
+			<div class="container4">
+				<div class="price">
+					<ul>
+						<li style="color: #656565; font-size: .22rem; ">共9件商品</li>
+						<li style="color: #000000; font-size: .42rem; font-weight: 700;">￥0.00</li>
+					</ul>
+				</div>
+				<div class="buy">
+					<a href="2-3赠送页面.html"><img src="img/buy-btn.png" ></a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

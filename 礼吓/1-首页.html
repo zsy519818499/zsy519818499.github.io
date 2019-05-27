@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="reset.css"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			html {
+				/* font-size: 100px; */
+				/* 设计图:750px ---- 设备375px
+				 测量大小减半
+				 */
+				font-size: 50px;
+			}
+
+			/* 单位:不要出现px单位
+			1. 百分比单位
+			2. rem单位
+			3.铺满屏宽度:不要给,自适应
+			4.文字大小用rem单位
+			
+			多用弹性盒子!!!!
+			 */
+			.wrapper {
+				/* width: 375px; */
+			}
+
+			.wrapper .item01 img {
+				width: 100%;
+			}
+
+			.item02 {
+				padding: .5rem .44rem;
+				position: relative;
+			}
+			.item02 img{
+				width: 100%;
+			}
+			.huangguan{
+				position: absolute;
+				top: .30rem;
+				right: .20rem;
+				width: .52rem;
+				height: .48rem;
+			}
+			.huangguan img{
+				width: 100%;
+			}
+			.item03 {
+				padding: 0 1.42rem;
+			}
+			.item03 img{
+				width: 100%;
+			}
+			.item04 {
+				padding-top: .42rem;
+				padding-left: .45rem;
+				padding-right: .45rem;
+			}
+			.item04 img{
+				width: 100%;
+			}
+			.item05 ul{
+				display: flex;
+				/* background: red; */
+				justify-content: space-around;
+				height: .5rem;
+				align-items: center;
+				margin: 0 .8rem;
+			}
+			.item05 ul li{
+				/* margin: 0 .25rem; */
+				text-align: center;
+				
+
+			}
+			.item05 ul li a{
+				color: #000000;
+				font-size: .28rem;
+				text-align: center;
+				font-weight: 600;
+				font-family: webfont;
+			}
+
+
+
+			@media screen and (max-width: 374px) {
+				html {
+					font-size: 40px;
+				}
+
+			}
+
+			@media screen and (min-width: 376px) and (max-width: 414px) {
+				html {
+					font-size: 60px;
+				}
+
+			}
+		</style>
+	</head>
+	<body>
+		<h1 style="font-size: 0.36rem; text-align: center; font-weight: 600; line-height: 0.79rem;">礼吓</h1>
+		<div class="wrapper">
+			<div class="item01">
+				<a href="#"><img src="img/shouye01.png" ></a>
+			</div>
+			<div class="item02">
+				<a href="2-1订单购买页.html">
+					<img src="img/shouye02.png" >
+				<div class="huangguan">
+					<img src="img/huangguan.png" >
+				</div>
+				</a>
+			</div>
+			<div class="item03">
+				<img src="img/shouye03.png" >
+			</div>
+			<div class="item04">
+				<a href=""><img src="img/shouye04.png" ></a>
+			</div>
+			<div class="item04">
+				<a href="#"><img src="img/shouye05.png" ></a>
+			</div>
+			<div class="item04">
+				<a href="#"><img src="img/shouye06.png" ></a>
+			</div>
+			<div class="item04">
+				<a href="#"><img src="img/shouye07.png" ></a>
+			</div>
+			<div class="item04">
+				<a href="#"><img src="img/shouye08.png" ></a>
+			</div>
+			<div class="item04">
+				<a href="#"><img src="img/shouye09.png" ></a>
+			</div>
+			<div class="item04">
+				<a href="#"><img src="img/shouye10.png" ></a>
+			</div>
+			<div class="item04">
+				<a href="#"><img src="img/shouye11.png" ></a>
+			</div>
+			<div class="item04">
+				<a href="#"><img src="img/shouye12.png" ></a>
+			</div>
+			<div class="item04">
+				<a href="#"><img src="img/shouye13.png" ></a>
+			</div>
+			<div class="item05">
+				<ul>
+					<li>
+					<a href="3-1我赠送的.html">我赠送的</a>
+					</li>
+					<li>|</li>
+					<li>
+					<a href="4-1我收到的.html">我收到的</a>
+					</li>
+				</ul>
+			</div>
+			
+
+
+
+
+		</div>
+	</body>
+</html>

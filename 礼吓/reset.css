@@ -1,0 +1,37 @@
+html,body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,input,em,textarea,p,th,td{margin:0px;padding:0px;}
+/*
+去除图片底部间隙
+*/
+
+img{vertical-align: middle;}
+
+li{list-style-type: none;}
+
+a{text-decoration: none;}
+
+a:link {color:#000000;text-decoration:none;}
+a:visited {color:#000000;text-decoration:none;}
+a:hover {color:#666;text-decoration:underline;}
+a:active {color:#ffffff;text-decoration:none;}
+
+.clearfix:after{overflow:hidden;clear:both;display:block;height:0;content:"\20"} 
+/*它就是空格，*/
+.clearfix{*zoom:1;}
+.clear {clear:both;width:0;height:0;overflow:hidden;line-height:0;}
+.clearBoth{clear:both;}
+.fl {float:left;}
+.fr {float:right;}
+
+
+body{
+	font: 12px/1.2 '微软雅黑', '宋体', STHeiTi,Arial, Helvetica, sans-serif;
+	color: #333;
+	min-width: 375px;
+}
+@font-face {font-family: 'webfont';
+  src: url('//at.alicdn.com/t/webfont_zkdjrqbbasr.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/webfont_zkdjrqbbasr.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/webfont_zkdjrqbbasr.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/webfont_zkdjrqbbasr.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/webfont_zkdjrqbbasr.svg#NotoSansHans-DemiLight') format('svg'); /* iOS 4.1- */
+}

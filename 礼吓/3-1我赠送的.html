@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<meta charset="utf-8">
+			<link rel="stylesheet" type="text/css" href="reset.css"/>
+			<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+			<title></title>
+			<style type="text/css">
+				html {
+					/* font-size: 100px; */
+					/* 设计图:750px ---- 设备375px
+					 测量大小减半
+					 */
+					font-size: 50px;
+				}
+	
+				/* 单位:不要出现px单位
+				1. 百分比单位
+				2. rem单位
+				3.铺满屏宽度:不要给,自适应
+				4.文字大小用rem单位
+				
+				多用弹性盒子!!!!
+				 */
+	
+				@media screen and (max-width: 374px) {
+					html {
+						font-size: 40px;
+					}
+	
+				}
+	
+				@media screen and (min-width: 376px) and (max-width: 414px) {
+					html {
+						font-size: 60px;
+					}
+	
+				}
+				.zongjiazhi {
+					padding-top: .2rem;
+					padding-left: .45rem;
+					padding-right: .45rem;
+				}
+				.zongjiazhi img{
+					width: 100%;
+				}
+				.item {
+					padding-top: .2rem;
+					padding-left: .45rem;
+					padding-right: .45rem;
+				}
+				.item img{
+					width: 100%;
+				}
+				.footer{
+					margin-top: 1.2rem;
+				}
+				.footer ul{
+					display: flex;
+					/* background: red; */
+					justify-content: space-around;
+					height: .5rem;
+					align-items: center;
+					margin: 0 2rem;
+				}
+				.footer ul li{
+					/* margin: 0 .25rem; */
+					text-align: center;
+					
+				
+				}
+				.footer ul li a{
+					color: #576b95;
+					font-size: .28rem;
+					text-align: center;
+					/* font-weight: 600; */
+					font-family: webfont;
+				}
+			</style>
+		</head>
+		<body>
+			<h1 style="font-size: 0.36rem; text-align: center; font-weight: 600; line-height: 0.79rem;">我赠送的</h1>
+			<div class="wrapper">
+				<div class="zongjiazhi">
+					<img src="img/3-1-1.png" >
+				</div>
+				<div class="item">
+					<img src="img/3-1-2.png" >
+				</div>
+				<div class="item">
+					<img src="img/3-1-3.png" >
+				</div>
+				<div class="item">
+					<img src="img/3-1-4.png" >
+				</div>
+				<div class="footer">
+					<ul>
+						<li>
+						<a href="#">联系客服</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</body>
+	</html>
+	

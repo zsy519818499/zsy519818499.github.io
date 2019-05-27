@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="reset.css" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			html {
+				/* font-size: 100px; */
+				/* 设计图:750px ---- 设备375px
+				 测量大小减半
+				 */
+				font-size: 50px;
+			}
+
+			/* 单位:不要出现px单位
+			1. 百分比单位
+			2. rem单位
+			3.铺满屏宽度:不要给,自适应
+			4.文字大小用rem单位
+			
+			多用弹性盒子!!!!
+			 */
+
+			@media screen and (max-width: 374px) {
+				html {
+					font-size: 40px;
+				}
+
+			}
+
+			@media screen and (min-width: 376px) and (max-width: 414px) {
+				html {
+					font-size: 60px;
+				}
+
+			}
+
+			.gift {
+				width: 6.9rem;
+				height: 4.42rem;
+				/* margin-left: .3rem;
+				margin-right: .3rem; */
+				margin: 0 auto;
+				margin-top: .32rem;
+			}
+
+			.gift img {
+				width: 100%;
+			}
+
+			.detail {
+				border: .01rem solid #A9A9A9;
+				border-radius: .1rem;
+				margin-left: .3rem;
+				margin-right: .3rem;
+			}
+
+			.detail ul {
+				display: flex;
+				/* background: red; */
+				justify-content: space-between;
+				height: .68rem;
+				align-items: center;
+				margin: 0 .1rem;
+			}
+
+			.detail ul li {
+				/* margin: 0 .25rem; */
+				text-align: center;
+				margin: 0 .37rem;
+
+			}
+
+			.detail ul li p {
+				color: #000000;
+				font-size: .28rem;
+				color: #656565;
+			}
+
+			.zengyan {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin-left: .35rem;
+				margin-top: .28rem;
+			}
+
+
+			.kuang {
+				text-align: center;
+				padding: .2rem .4rem .4rem .4rem;
+			}
+
+			textarea {
+				background: #f8f8f8;
+				font-size: .3rem;
+				/* padding: .32rem; */
+				border: none;
+				border-radius: .2rem;
+				width: 100%;
+			}
+
+			.zengsong {
+				width: 6.9rem;
+				height: .88rem;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: .76rem;
+				margin-bottom: .7rem;
+			}
+
+			.zengsong img {
+				width: 100%;
+
+			}
+		</style>
+	</head>
+	<body>
+		<h1 style="font-size: 0.36rem; text-align: center; font-weight: 600; line-height: 0.96rem;">购买礼盒</h1>
+		<div class="wrapper">
+			<div class="gift">
+				<a href="#"><img src="img/zengsonglihe.png"></a>
+			</div>
+			<div class="detail">
+				<ul>
+					<li>
+						<p style="text-align: left;">礼盒价格</p>
+					</li>
+					<li>
+						<p>198元</p>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<p style="text-align: left;">盒内礼品</p>
+					</li>
+					<li>
+						<p>52件</p>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<p style="text-align: left;">礼品总价值</p>
+					</li>
+					<li>
+						<p>3000~5000元</p>
+					</li>
+				</ul>
+			</div>
+			<div class="zengyan">
+				<p style="color: #576b95; font-size: .24rem; font-weight: 900;">你的赠言</p>
+			</div>
+			<div class="kuang">
+				<textarea rows="6" cols="46">
+美女,一起吃个早饭~
+				</textarea>
+			</div>
+
+
+			<div class="zengsong">
+				<a href="2-4赠送成功.html"><img src="img/zengsong-btn.png"></a>
+			</div>
+		</div>
+	</body>
+</html>
